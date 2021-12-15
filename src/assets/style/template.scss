@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@700;900&display=swap');
+
+/*****************************************************/
+/* Common */
+
+html, body {font-size: 16px;}
+
+/* Color */
+$c_wthie: #fff;
+$c_black: #444;
+$c_red: #ff5f5f;
+$c_redpastel: #ffe2e2;
+$c_dd: #ddd;
+$c_bb: #bbb;
+$c_eb: #ebebeb;
+$c_db: #dbdbdb;
+$c_98: #989898;
+$c_9b: #9b9b9b;
+
+/* Shadow */
+$shadow_basic: 0 0 12px 0 rgba(0, 0, 0, 0.1);
+$shadow_red: 0 0 16px 0 rgba(255, 95, 95, 0.18);
+
+/* size */
+$px_10: 0.625rem;
+$px_14: 0.875rem;
+$px_15: 0.9375rem;
+$px_16: 1rem;
+$px_18: 1.125rem;
+$px_20: 1.25rem;
+$px_24: 1.5rem;
+$px_30: 1.875rem;
+$px_50: 3.125rem;
+$px_54: 3.375rem;
+$px_56: 3.5rem;
+$px_60: 3.75rem;
+$px_74: 4.625rem;
+$px_120: 7.5rem;
+$px_150: 9.375rem;
+$px_200: 12.5rem;
+
+/* Font Weight */
+$weight_thin: 100;
+$weight_l: 300;
+$weight_r: 400;
+$weight_m: 500;
+$weight_b: 700;
+$weight_eb: 900;
+
+@mixin text_stroke($color) {
+	text-shadow: -0.6px 0 $color, 0 0.6px $color, 0.6px 0 $color, 0 -0.6px $color;
+}
+
+/* font style */
+.txt {color: $c_black; line-height: 1.6; letter-spacing: -0.3px; word-break: keep-all;
+	&_bg {font-family: 'Noto Sans Display' !important;
+		color: $c_wthie; font-size: $px_120; font-weight: $weight_eb; line-height: 1.1; letter-spacing: -1px; 
+		@include text_stroke($c_db);
+		p {font-family: inherit;}
+	}
+	&_visual {font-size: $px_74; font-weight: $weight_b; line-height: 1.4;}
+	&_sectitle {font-size: $px_56; font-weight: $weight_b; line-height: 1.2;}
+	&_cont {font-size: $px_16; font-weight: $weight_r; line-height: 1.6;}
+}
+.en, .txt.en {letter-spacing: -0.5px; font-family: 'Noto Sans Display' !important; font-weight: inherit;}
+.weight {
+	&_thin {font-weight: $weight_thin;}
+	&_l {font-weight: $weight_l;}
+	&_r {font-weight: $weight_r;}
+	&_m {font-weight: $weight_m;}
+	&_b {font-weight: $weight_b;}
+	&_eb {font-weight: $weight_eb;}
+}
+
+/* font size */
+.size {
+	&_20 {font-weight: $px_20;}
+	&_24 {font-size: $px_24;}
+}
+
+/* font color */
+.c {
+	&_red {color: $c_red;}
+	&_9b {color: $c_9b;}
+	&_bb {color: $c_bb;}
+}
+
+/* blank */
+.blank_box {
+	&_10 {width: $px_10; height: $px_10;}
+	&_20 {width: $px_20; height: $px_20;}
+	&_15 {width: $px_15; height: $px_15;}
+	&_30 {width: $px_30; min-width: $px_30; height: $px_30; min-height: $px_30;}
+	&_50 {width: $px_50; min-width: $px_50; height: $px_50; min-height: $px_50;}
+}
+
+/* position */
+.posi {
+	&_rltv {position: relative;}
+	&_absol {position: absolute;}
+	&_fixed {position: fixed;}
+}
+.z_-1 {z-index: -1;}
+
+/* Layout */
+.lay {
+	&_1 {width: 100%;}
+	&_2_1 {width: 50%;}
+	&_3_1 {width: 33.3333%; min-width: 33.3333%;}
+	&_4_1 {width: 25%;}
+	&_7_1 {width: 14.2857%;}
+}
+.flex {display: flex;
+	&_grow_1 {flex-grow: 1;}
+	&_grow_2 {flex-grow: 2;}
+	&_grow_3 {flex-grow: 3;}
+	&_row {flex-direction: row;}
+	&_col {flex-direction: column;}
+	&_align_center {align-items: center;}
+	&_align_start {align-items: flex-start;}
+	&_align_end {align-items: flex-end;}
+	&_justi_center {justify-content: center;}
+	&_justi_start {justify-content: flex-start;}
+	&_justi_end {justify-content: flex-end;}
+	&_justi_around {justify-content: space-around;}
+	&_justi_between {justify-content: space-between;}
+	&_justi_evenly {justify-content: space-evenly;}
+	&_wrap {flex-wrap: wrap;}
+	&_nowrap {flex-wrap: nowrap;}
+}
+
+/* page common style */
+.maxwid {max-width: 1080px; margin: 0 auto;}
+.page {width: 100%; height: auto;}
+.wrap {width: 100%; height: auto;}
+.sec {width: 100%; height: auto;
+	&_inner {width: 100%; height: auto;}
+}
+.txt_bg_frame {top: 0; left: 0;}
+.pd_sec {padding: $px_60 0;}
+.txt_frame {width: 100%;}
+
+/* Common 끝 */
+/*****************************************************/
+
+
+
+/*****************************************************/
+/*  */
+
+#sec_0 {
+	.sec_inner {padding-top: $px_150; padding-bottom: $px_150;}
+}
+
+.underline {
+	position: relative;
+	&:after {
+		content: ''; display: block; width: 100%; height: 10px; position: absolute; bottom: -1px; right: -10px; z-index: -1; border-radius: 6px; background-color: $c_redpastel;
+	}
+}
+
+.square {
+	max-width: none; width: 100%; box-shadow: $shadow_basic; overflow: hidden; border-radius: 40px;
+	
+	.inner {
+		padding-bottom: 100%; position: relative; width: 100%; height: 0; overflow: hidden;
+	}
+	.img_frame {position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 1px solid#ebebeb;
+		img {display: block; width: 100%; height: 100%; object-fit: cover;}
+	}
+
+	&.act {
+		position: absolute; bottom: 0; left: 0; z-index: 1;
+		transition: 0.3s; width: 110%; margin-top: -20%; box-shadow: $shadow_red;
+		.inner {padding-bottom: 110%; transition: 0.3s;}
+	}
+}
+
+.pf_visual_box {padding-top: 136px;
+	.txt_frame {min-height: 9.4em;}
+	.img_box {width: 61%; height: 430px; right: 0; bottom: 0; border-radius: 30px 0 0 30px; overflow: hidden;}
+	.img_frame {width: 100%; height: 100%; overflow: hidden;
+		img {display: block; width: 100%; height: 100%; object-fit: cover;
+		background-color: #dbdbdb;}
+	}
+}
+
+.btn_frame {
+	width: 100%; height: $px_56;
+	.btn {
+		cursor: pointer;
+		&.txt.txt_cont {
+			width: 100%; height: 100%; position: relative; border: 1px solid $c_db; border-radius: $px_30; font-weight: $weight_b;
+			i.ico {
+				display: block; width: $px_14; height: 100%; position: absolute; top: 0; right: $px_20; background-image: url('../images/btn/btn-arr.png'); background-size: 100% auto; background-position: center center; background-repeat: no-repeat;
+			}
+			.ani_txt {display: inline-block; font-size: 106%;}
+			&:hover {
+				transition: 0.3s; transform: translateY(-8px); box-shadow: $shadow_basic;
+			}
+		}
+	}
+}
+
+.input_frame {width: 100%; height: auto; padding: $px_10 0;
+	input {
+		width: 100%; height: $px_50; border: 0; border-bottom: 1px solid #dbdbdb;
+		transition: 0.3s;
+	}
+	textarea {width: 100%; height: $px_200; border: 1px solid #dbdbdb; padding: $px_15; border-radius: 6px; resize: none; box-sizing: border-box;transition: 0.3s;}
+	input:focus, textarea:focus {border-color: #ff5f5f;}
+}
+
+/* 끝 */
+/*****************************************************/
+
+
+
+/*****************************************************/
+/* Media query */
+
+@media screen and (max-width: 1080px) {
+	html, body { font-size: 14px; }
+}
+
+/* Media query 끝 */
+/*****************************************************/

@@ -1,0 +1,80 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: 'Noto Sans', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul, li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a { 
+    color: inherit;
+    text-decoration: none; 
+}
+
+input[type='text'], select, input[type='password'],input[type='tel'],input[type='number'] { 
+	border: solid 1px #dbdbdb; 
+}
+
+button {background: none; border: 0; padding: 0; margin: 0;}
+button:focus {outline: 0;}
+
+input[type='button'] {cursor: pointer;}
+input::-webkit-input-placeholder {color: #9b9b9b;}
+input:-ms-input-placeholder {color: #9b9b9b;}
+textarea::-webkit-input-placeholder {color: #9b9b9b;}
+textarea:-ms-input-placeholder {color: #9b9b9b;}
+input::placeholder {color: #9b9b9b;}
+textarea::placeholder {color: #9b9b9b;}
+
+input:focus, select:focus, textarea:focus {outline: none; transition: 0.2s;}
+
+input[type=submit], input[type=text], input[type=button], input[type=password], input[type=tel], input[type=number], textarea, select {-webkit-appearance:none; -moz-appearance:none; -o-appearance:none; appearance:none;}
+
+select::-ms-expand {display:none;}
+
+/* 
+300L - 얇은폰트
+400R - 기본폰트 
+700B - 굵은폰트
+900EB 더 굵은 폰트  */
+
+a { transition: color 0.2s ease-in-out; -webkit-transition: color 0.2s ease-in-out; -moz-transition:color 0.2s ease-in-out; -o-transition: color 0.2s ease-in-out;  }
+a.btn {transition: background-color 0.2s ease-in-out; -webkit-transition: background-color 0.2s ease-in-out; -moz-transition:background-color 0.2s ease-in-out; -o-transition: background-color 0.2s ease-in-out; display: block; }
