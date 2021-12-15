@@ -238,17 +238,17 @@ class Home extends React.Component {
                                 <div className="blank_box_20"></div>
                                 <form method="get" action="mailto:daae0214@naver.com">
                                     <div className="input_frame">
-                                        <input type="text" name="subject" placeholder="성함 또는 기업명" className="txt txt_cont" />
+                                        <input type="text" name="subject" placeholder="제목" className="txt txt_cont" />
                                     </div>
-                                    <div className="input_frame">
+                                    {/* <div className="input_frame">
                                         <input type="text" name="phone" placeholder="답변 받으실 연락처" className="txt txt_cont" />
-                                    </div>
+                                    </div> */}
                                     <div className="input_frame">
                                         <textarea name="body" placeholder="남기실 내용" className="txt txt_cont" />
                                     </div>
                                     <div className="blank_box_20"></div>
                                     <div className="btn_frame">
-                                        <button type="submit" className="btn txt txt_cont"><b className="ani_txt">✉️</b> daae0214@naver.com <i className="ico ico_arr"></i></button>
+                                        <button type="submit" className="btn txt txt_cont"><b className="size_24">✉️</b> daae0214@naver.com <i className="ico ico_arr"></i></button>
                                     </div>
                                 </form>
                             </div>
