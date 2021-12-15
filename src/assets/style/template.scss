@@ -171,7 +171,7 @@ $weight_eb: 900;
 
 	&.act {
 		position: absolute; bottom: 0; left: 0; z-index: 1;
-		transition: 0.3s; width: 110%; margin-top: -20%; box-shadow: $shadow_red;
+		transition: 0.5s; width: 110%; margin-top: -20%; box-shadow: $shadow_red;
 		.inner {padding-bottom: 110%; transition: 0.3s;}
 	}
 }

@@ -11,14 +11,25 @@ import thum6 from "../assets/images/img/img-thum-6.png";
 import thum7 from "../assets/images/img/img-thum-7.png";
 import Board from "../component/Board";
 
+import styled from "styled-components";
+import {motion} from "framer-motion";
+// import Section0 from "../component/Section0";
+
+const Section = styled(motion.section)`
+    width:100%; heigh:auto;
+    transform:translateY(50px);
+`;
+
 class Home extends React.Component {
 
     state = {
         id: 1,
+        isHover: false
     }
 
     handleThum = (id) => {
         this.setState({id});
+        this.setState({isHover:true});
     }
 
     render(){
@@ -26,7 +37,7 @@ class Home extends React.Component {
             <div className="page">
                 <div className="wrap">
 
-                    <section id="sec_0" className="sec posi_rltv">
+                    <Section id="sec_0" className="sec_posi_rltv" initial={{y: '60px', opacity:0}} animate={{ y: '0px', opacity: 1 }} transition={{duration:0.8}}>
                         <div className="sec_inner maxwid">
                             <div className="txt_bg_frame posi_absol z_-1">
                                 <div className="txt_bg">
@@ -42,15 +53,15 @@ class Home extends React.Component {
                                 <p className="txt size_24 c_9b weight_m">UI/UX Design <b className="c_red">+</b> Publishing <b className="c_red">+</b> Frontend Development</p>
                             </div>
                         </div>
-                    </section>
+                    </Section>
 
-                    <section id="sec_1" className="sec pd_sec posi_rltv">
+                    <Section id="sec_1" className="sec pd_sec posi_rltv" initial={{y: '60px', opacity:0}} animate={{ y: '0px', opacity: 1 }} transition={{duration:0.8}}>>
                         <div className="txt_bg_frame posi_absol z_-1">
                             <div className="txt_bg">
                                 <p className="">INTRO</p>
                             </div>
                         </div>
-                        <div className="sec_inner maxwid flex flex_row">
+                        <motion.div className="sec_inner maxwid flex flex_row" >
                             <div className="left lay_3_1">
                                 <div className="txt_frame">
                                     <h3 className="txt txt_sectitle">반가워요!<br/>저는요<b className="en c_red">,</b></h3>
@@ -68,10 +79,10 @@ class Home extends React.Component {
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                    </section>
+                        </motion.div>
+                    </Section>
 
-                    <section id="sec_2" className="sec pd_sec posi_rltv">
+                    <Section id="sec_2" className="sec pd_sec posi_rltv" initial={{y: '60px', opacity:0}} animate={{ y: '0px', opacity: 1 }} transition={{duration:0.8}}>>
                         <div className="txt_bg_frame posi_absol z_-1">
                             <div className="txt_bg">
                                 <p className="">STRENGTH</p>
@@ -86,7 +97,7 @@ class Home extends React.Component {
                             <div className="blank_box_50"></div>
                             <div className="lay_1">
                                 <ul className="lay_1 flex flex_row flex_justi_between">
-                                    <li className="item lay_3_1">
+                                    <motion.li className="item lay_3_1" whileHover={{scale:1.1}}>
                                         <div className="txt_frame tit">
                                             <h4 className="txt weight_l c_bb size_20">
                                                 for <b className="weight_b c_red underline">Design</b>
@@ -98,9 +109,9 @@ class Home extends React.Component {
                                             직관적인 디자인에 위트 한방울을 섞는 것을 좋아합니다. 편하지 않으면 결국 사용하지 않게 되기 때문에 사용 편의성이 잘 고려되는 것을 중요하게 생각합니다.
                                             </p>
                                         </div>
-                                    </li>
+                                    </motion.li>
                                     <li className="blank_box_30"></li>
-                                    <li className="item lay_3_1">
+                                    <motion.li className="item lay_3_1" whileHover={{scale:1.1}}>
                                         <div className="txt_frame tit">
                                             <h4 className="txt weight_l c_bb size_20">
                                                 for <b className="weight_b c_red underline">Development</b>
@@ -112,9 +123,9 @@ class Home extends React.Component {
                                             웹 퍼블리싱을 이해하고 잘 다룹니다. 개발 단계와 유지보수를 고려한 코드를 작성하는 것과 기획자, 디자이너의 의도를 잘 이해해하는 것을 중요하게 생각합니다.
                                             </p>
                                         </div>
-                                    </li>
+                                    </motion.li>
                                     <li className="blank_box_30"></li>
-                                    <li className="item lay_3_1">
+                                    <motion.li className="item lay_3_1" whileHover={{scale:1.1}}>
                                         <div className="txt_frame tit">
                                             <h4 className="txt weight_l c_bb size_20">
                                                 for <b className="weight_b c_red underline">Team</b>
@@ -126,11 +137,11 @@ class Home extends React.Component {
                                             다양한 직군과의 원활한 협업을 이끌어내기 위해 노력합니다. 나와 다른 의견을 존중하고 이해하며 함께 작업했을 때에 더 좋은 결과물을 만들 수 있다고 생각합니다.
                                             </p>
                                         </div>
-                                    </li>
+                                    </motion.li>
                                 </ul>
                                 <div className="blank_box_30"></div>
                                 <ul className="lay_1 flex flex_row flex_justi_between">
-                                    <li className="item lay_3_1">
+                                    <motion.li className="item lay_3_1" whileHover={{scale:1.1}}>
                                         <div className="txt_frame tit">
                                             <h4 className="txt weight_l c_bb size_20">
                                                 for <b className="weight_b c_red underline">Customers</b>
@@ -142,9 +153,9 @@ class Home extends React.Component {
                                             초기에 고객의 요구사항을 정확히 파악하는 것을 중요하게 생각합니다. 좋은 결과물을 위해 때로는 고객의 의견을 무조건적으로 수용하는 것 보다 적절한 타협도 필요하다고 생각합니다.
                                             </p>
                                         </div>
-                                    </li>
+                                    </motion.li>
                                     <li className="blank_box_30"></li>
-                                    <li className="item lay_3_1">
+                                    <motion.li className="item lay_3_1" whileHover={{scale:1.1}}>
                                         <div className="txt_frame tit">
                                             <h4 className="txt weight_l c_bb size_20">
                                                 for <b className="weight_b c_red underline">Users</b>
@@ -156,9 +167,9 @@ class Home extends React.Component {
                                             사용하는 사람은 어떤 사람일지, 무엇을 가장 원할지 여러 케이스의 사용자를 상상하고 불편하지 않고 흥미로운 인터페이스와 경험을 제공하는 것을 중요하게 생각합니다. 
                                             </p>
                                         </div>
-                                    </li>
+                                    </motion.li>
                                     <li className="blank_box_30"></li>
-                                    <li className="item lay_3_1">
+                                    <motion.li className="item lay_3_1" whileHover={{scale:1.1}}>
                                         <div className="txt_frame tit">
                                             <h4 className="txt weight_l c_bb size_20">
                                                 for <b className="weight_b c_red underline">Me</b>
@@ -170,13 +181,13 @@ class Home extends React.Component {
                                             일을 꾸준히 하기 위해서 자기개발도 중요하지만 무엇보다 스스로의 멘탈을 잘 관리해야 한다고 생각합니다. 저는 스스로를 잘 알고 케어하며 번아웃을 대비하고 있습니다.
                                             </p>
                                         </div>
-                                    </li>
+                                    </motion.li>
                                 </ul>
                             </div>
                         </div>
-                    </section>
+                    </Section>
 
-                    <section id="sec_3" className="sec pd_sec posi_rltv">
+                    <Section id="sec_3" className="sec pd_sec posi_rltv" initial={{y: '60px', opacity:0}} animate={{ y: '0px', opacity: 1 }} transition={{duration:0.8}}>>
                         <div className="txt_bg_frame posi_absol z_-1">
                             <div className="txt_bg">
                                 <p className="">WORKS</p>
@@ -215,9 +226,9 @@ class Home extends React.Component {
                                 </ul>
                             </div>
                         </div>
-                    </section>
+                    </Section>
 
-                    <section id="sec_4" className="sec pd_sec posi_rltv">
+                    <Section id="sec_4" className="sec pd_sec posi_rltv" initial={{y: '60px', opacity:0}} animate={{ y: '0px', opacity: 1 }} transition={{duration:0.8}}>>
                         <div className="txt_bg_frame posi_absol z_-1">
                             <div className="txt_bg">
                                 <p className="">CONTACT</p>
@@ -253,7 +264,7 @@ class Home extends React.Component {
                                 </form>
                             </div>
                         </div>
-                    </section>
+                    </Section>
 
                 </div>
             </div>

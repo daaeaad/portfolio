@@ -10,7 +10,8 @@ import pf5 from "../assets/images/img/img-pf-5.png";
 import pf6 from "../assets/images/img/img-pf-6.png";
 import pf7 from "../assets/images/img/img-pf-7.png";
 
-
+import {motion} from "framer-motion";
+import styled from "styled-components";
 
 
 function Board( {id, pfNum} ) {
