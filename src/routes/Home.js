@@ -6,11 +6,13 @@ import "../assets/style/template.scss";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
+import Header from "../component/Header";
 import Section0 from "../component/Section0";
 import Section1 from "../component/Section1";
 import Section2 from "../component/Section2";
 import Section3 from "../component/Section3";
 import Section4 from "../component/Section4";
+import Footer from "../component/Footer";
 
 
 
@@ -36,7 +38,10 @@ class Home extends React.Component {
 
     render(){
         return(
-            <div className="page">
+            <motion.div className="page">
+
+                <Header />
+
                 <div className="wrap">
 
                     <Section0 />
@@ -49,8 +54,10 @@ class Home extends React.Component {
 
                     <Section4 />
 
+                    <Footer />
+
                 </div>
-            </div>
+            </motion.div>
         );
     }
 }

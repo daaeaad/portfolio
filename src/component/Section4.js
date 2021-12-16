@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import TextAnimation from "./TextAnimation";
+import SubtitAnimation from "./SubtitAnimation";
 
 
 const Section4 = () => {
@@ -27,13 +29,13 @@ const Section4 = () => {
             animate={animationControl}>
             <div className="txt_bg_frame posi_absol z_-1">
                 <div className="txt_bg">
-                    <p className="">CONTACT</p>
+                    <TextAnimation txt="CONTACT" />
                 </div>
             </div>
             <div className="sec_inner maxwid flex flex_row">
                 <div className="left lay_3_1">
                     <div className="txt_frame">
-                        <h3 className="txt txt_sectitle">관심 있으시면<br/>연락 주세요 <b className="en c_red">:)</b></h3>
+                        <h3 className="txt txt_sectitle">관심 있으시면<br/>연락 주세요 <b className="en c_red"><SubtitAnimation txt=':)' isEn={true} /></b></h3>
                     </div>
                 </div>
                 <div className="lay_1 ">

@@ -10,16 +10,11 @@ import thum4 from "../assets/images/img/img-thum-4.png";
 import thum5 from "../assets/images/img/img-thum-5.png";
 import thum6 from "../assets/images/img/img-thum-6.png";
 import thum7 from "../assets/images/img/img-thum-7.png";
-// 임시
-import pf1 from "../assets/images/img/img-pf-1.png";
-import pf2 from "../assets/images/img/img-pf-2.png";
-import pf3 from "../assets/images/img/img-pf-3.png";
-import pf4 from "../assets/images/img/img-pf-4.png";
-import pf5 from "../assets/images/img/img-pf-5.png";
-import pf6 from "../assets/images/img/img-pf-6.png";
-import pf7 from "../assets/images/img/img-pf-7.png";
 
 import Board from "./Board";
+import TextAnimation from "./TextAnimation";
+import SubtitAnimation from "./SubtitAnimation";
+
 
 
 
@@ -49,16 +44,15 @@ const Section3 = () => {
             animate={animationControl}>
             <div className="txt_bg_frame posi_absol z_-1">
                 <div className="txt_bg">
-                    <p className="">WORKS</p>
+                    <TextAnimation txt="WORKS" />
                 </div>
             </div>
             <div className="sec_inner">
                 <div className="left maxwid">
                     <div className="txt_frame">
-                        <h3 className="txt txt_sectitle">이런 걸<br/>만들었어요<b className="en c_red">!</b></h3>
+                        <h3 className="txt txt_sectitle">이런 걸<br/>만들었어요<b className="en c_red"><SubtitAnimation txt='!' isEn={true} /></b></h3>
                     </div>
                 </div>
-
 
 
                 <Board id={number} pfNum={`pf${number}`} ani={{opacity:1, x:0, transition:{duration:0.4, delay:0.2}}}/>

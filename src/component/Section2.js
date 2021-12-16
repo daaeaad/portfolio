@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import TextAnimation from "./TextAnimation";
+import SubtitAnimation from "./SubtitAnimation";
 
 
 const Section2 = () => {
@@ -27,13 +29,13 @@ const Section2 = () => {
             animate={animationControl}>
             <div className="txt_bg_frame posi_absol z_-1">
                 <div className="txt_bg">
-                    <p className="">STRENGTH</p>
+                    <TextAnimation txt="STRENGTH" />
                 </div>
             </div>
             <div className="sec_inner maxwid flex flex_col">
                 <div className="left lay_3_1">
                     <div className="txt_frame">
-                        <h3 className="txt txt_sectitle">이런 걸<br/>좀 <b className="c_red">잘</b>해요.</h3>
+                        <h3 className="txt txt_sectitle">이런 걸<br/>좀 <b className="c_red"><SubtitAnimation txt='잘' isEn={false} /></b>해요.</h3>
                     </div>
                 </div>
                 <div className="blank_box_50"></div>
@@ -48,7 +50,7 @@ const Section2 = () => {
                             <div className="blank_box_10"></div>
                             <div className="txt_frame con">
                                 <p className="txt size_14">
-                                직관적인 디자인에 위트 한방울을 섞는 것을 좋아합니다. 편하지 않으면 결국 사용하지 않게 되기 때문에 사용 편의성이 잘 고려되는 것을 중요하게 생각합니다.
+                                직관적이고 깔끔한 디자인을 좋아합니다. 편하지 않으면 결국 사용자에게 외면 당할 것이라고 생각하기 때문에 사용 편의성이 잘 고려되는 것을 중요하게 생각합니다.
                                 </p>
                             </div>
                         </motion.li>
