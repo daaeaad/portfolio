@@ -67,6 +67,9 @@ const Section3 = () => {
                             onHoverStart={() => {
                                 setNumber(1);
                             }}
+                            onClick={() => {
+                                setNumber(1);
+                            }}
                         >
                             <motion.div className={`square ${number===1?'act':''}`}>
                                 <div className="inner">
@@ -80,6 +83,9 @@ const Section3 = () => {
                         {/* 반복구간 */}
                         <motion.li className="lay_7_1 posi_rltv" 
                             onHoverStart={() => {
+                                setNumber(2);
+                            }}
+                            onClick={() => {
                                 setNumber(2);
                             }}
                         >

@@ -281,11 +281,18 @@ padding: $px_36; padding-bottom: $px_120;
 		.wrap {padding: $px_20; box-sizing: border-box;}
 		.pf_visual_box .img_box { margin-right: -$px_20; height: 27vh; }
 	}
+	#sec_2 {
+		.item {min-width: auto;}
+	}
 }
 @media screen and (max-width: 768px) {
 	html, body { font-size: 12px; } 
 	.txt_sectitle {font-size: 3rem;}
 	.pf_visual_box {padding-top: $px_80;}
+	#sec_2 {
+		ul {flex-direction: column;}
+		.item {width: 100%;}
+	}
 }
 @media screen and (max-width: 500px) {
 	html, body { font-size: 10px; }
@@ -299,6 +306,7 @@ padding: $px_36; padding-bottom: $px_120;
 	#sec_0 {
 		.txt_bg {font-size: 6rem; white-space: nowrap;}
 	}
+	.square {border-radius: $px_20;}
 	.pf_visual_box {padding-top: $px_30;}
 	.pf_visual_box .img_box {width: 100%; margin-left: $px_20; position: static; height: 24vh; }
 	#sec_3 {
