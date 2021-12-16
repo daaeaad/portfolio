@@ -100,6 +100,9 @@ const Section3 = () => {
                             onHoverStart={() => {
                                 setNumber(3);
                             }}
+                            onClick={() => {
+                                setNumber(3);
+                            }}
                         >
                             <motion.div className={`square ${number===3?'act':''}`}>
                                 <div className="inner">
@@ -110,6 +113,9 @@ const Section3 = () => {
                         </motion.li>
                         <motion.li className="lay_7_1 posi_rltv" 
                             onHoverStart={() => {
+                                setNumber(4);
+                            }}
+                            onClick={() => {
                                 setNumber(4);
                             }}
                         >
@@ -124,6 +130,9 @@ const Section3 = () => {
                             onHoverStart={() => {
                                 setNumber(5);
                             }}
+                            onClick={() => {
+                                setNumber(5);
+                            }}
                         >
                             <motion.div className={`square ${number===5?'act':''}`}>
                                 <div className="inner">
@@ -136,6 +145,9 @@ const Section3 = () => {
                             onHoverStart={() => {
                                 setNumber(6);
                             }}
+                            onClick={() => {
+                                setNumber(6);
+                            }}
                         >
                             <motion.div className={`square ${number===6?'act':''}`}>
                                 <div className="inner">
@@ -146,6 +158,9 @@ const Section3 = () => {
                         </motion.li>
                         <motion.li className="lay_7_1 posi_rltv" 
                             onHoverStart={() => {
+                                setNumber(7);
+                            }}
+                            onClick={() => {
                                 setNumber(7);
                             }}
                         >

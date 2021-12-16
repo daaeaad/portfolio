@@ -303,14 +303,16 @@ padding: $px_36; padding-bottom: $px_120;
 		.sec_inner.flex_row {flex-direction: column;}
 		.left.lay_3_1 {width: 100%; padding-bottom: $px_30;}
 	}
-	#sec_0 {
-		.txt_bg {font-size: 6rem; white-space: nowrap;}
-	}
+	.txt_bg {font-size: 6rem; white-space: nowrap;}
 	.square {border-radius: $px_20;}
 	.pf_visual_box {padding-top: $px_30;}
 	.pf_visual_box .img_box {width: 100%; margin-left: $px_20; position: static; height: 24vh; }
 	#sec_3 {
 		.lay_3_1 {width: 100%;}
+	}
+	#sec_4 {
+		padding-top: 90px;
+		.txt_bg_frame {top: $px_60;}
 	}
 }
 
