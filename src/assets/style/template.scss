@@ -3,7 +3,7 @@
 /*****************************************************/
 /* Common */
 
-html, body {font-size: 16px;}
+html, body {font-size: 16px; }
 
 /* Color */
 $c_wthie: #fff;
@@ -131,13 +131,13 @@ $weight_eb: 900;
 
 /* page common style */
 .maxwid {max-width: 1080px; margin: 0 auto;}
-.page {width: 100%; height: auto;}
+.page {width: 100%; height: auto; overflow: hidden;}
 .wrap {width: 100%; height: auto;}
 .sec {width: 100%; height: auto;
 	&_inner {width: 100%; height: auto;}
 }
 .txt_bg_frame {top: 0; left: 0;}
-.pd_sec {padding: $px_60 0;}
+.pd_sec {padding: $px_74 0;}
 .txt_frame {width: 100%;}
 
 /* Common 끝 */

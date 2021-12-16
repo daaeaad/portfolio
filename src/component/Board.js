@@ -10,14 +10,14 @@ import pf5 from "../assets/images/img/img-pf-5.png";
 import pf6 from "../assets/images/img/img-pf-6.png";
 import pf7 from "../assets/images/img/img-pf-7.png";
 
-import {motion} from "framer-motion";
 import styled from "styled-components";
+import {motion, useAnimation} from "framer-motion";
+import useInView from "react-intersection-observer";
 
 
-function Board( {id, pfNum} ) {
 
-    console.log(pfNum);
 
+function Board( {id, pfNum, ani} ) {
     // 이부분 나중에 nodejs 서버 연결하면 실제 api 요청하는걸로 수정하기
     const data = {
         1: {
@@ -43,8 +43,20 @@ function Board( {id, pfNum} ) {
         }
     };
     
+    const animationControl = useAnimation();
+
+    let isChange = true;
+    // isChange=true;
+    if(isChange) {
+        animationControl.start(ani);
+    }
+
     return(
-        <div className="pf_visual_box posi_rltv lay_1">
+
+        <motion.div className="pf_visual_box posi_rltv lay_1" 
+        initial={{opacity:0, x:1000}}
+        animate={animationControl}
+        >
             <div className="img_box posi_absol">
                 <div className="img_frame"><img src={data[id].pfimg} alt={id} /></div>
             </div>
@@ -64,7 +76,8 @@ function Board( {id, pfNum} ) {
                     </div> */}
                 </div>
             </div>
-        </div>
+        </motion.div>
+
     );
 }
 
