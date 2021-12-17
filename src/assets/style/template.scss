@@ -77,7 +77,9 @@ $weight_eb: 900;
 
 /* font size */
 .size {
-	&_20 {font-weight: $px_20;}
+	&_14 {font-size: $px_14;}
+	&_16 {font-size: $px_16;}
+	&_20 {font-size: $px_20;}
 	&_24 {font-size: $px_24;}
 	&_30 {font-size: $px_30;}
 	&_36 {font-size: $px_36;}
@@ -296,6 +298,12 @@ padding: $px_36; padding-bottom: $px_120;
 }
 @media screen and (max-width: 500px) {
 	html, body { font-size: 10px; }
+
+	.size {
+		&_14 {font-size: 1.3rem;}
+		&_20 {font-size: 1.4rem;}
+	}
+	.txt_cont {font-size: 1.3rem;}
 	.page {
 		.wrap {padding: $px_20; box-sizing: border-box;}
 	}
