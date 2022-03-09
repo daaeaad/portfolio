@@ -14,8 +14,8 @@ const mappingTxt = (text) => {
 
 const SubtitAnimation = (obj) => {
 
-    console.log('txt:::: ',obj.txt);
-    console.log('isEn:::: ',obj.isEn);
+    // console.log('txt:::: ',obj.txt);
+    // console.log('isEn:::: ',obj.isEn);
 
     const { txt, isEn } = obj;
 

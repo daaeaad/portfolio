@@ -41,14 +41,32 @@ const Section1 = () => {
                         </h3>
                     </div>
                 </div>
-                <div className="right flex flex_gflex_row_1">
+                <div className="right flex flex_gflex_row_1 flex_col">
                     <div className="txt_frame">
+                        <p className="txt txt_cont weight_b">이런 개발자가 되고 싶어요.</p>
+                        <div className="blank_box_10"></div>
                         <p className="txt txt_cont">
-                        디자인과 프론트엔드 개발을 하는 김다애 입니다. 저는 사용자의 편의성과 고객의 니즈를 정확히 파악하여 직관적이고 흥미롭게 풀어낸 디자인을 좋아하며, ‘만약에 이렇게 되면 어떡하지?’, ‘만약 이런 식으로 대비했을 때에 저런 문제가 발생하면 어떡하지?’ 굳이 사서 걱정하는 습관과 풍부한 상상력을 사용자를 배려하는 디자인과 꼼꼼하고 탄탄한 코드를 짜기 위해 활용합니다.
-                        <br/> <br/>
-                        늘 힘들지 않은 일은 없지만 끝내 해냈을 때의 성취감을 즐기며 일합니다. 모르는 것보다 나를 무지한 상태로 방치하는 것을 더 창피하다고 생각하기 때문에 자기개발을 중요하게 생각하며, 할 수 있는 일은 잘하고, 못하는 것은 더욱 열심히 합니다.
-                        <br/> <br/>
-                        내가 혼자 잘 해내는 것보다 다양한 사람들과 의견을 나누어 함께 좋은 결과물을 만들어내는 것이 더욱 멋진 결과물을 가져온다고 믿습니다. 그렇기 때문에 나와 다른 의견을 존중하고 수용하며 더 좋은 결과물을 함께 만들어내는 것을 즐거워 합니다.
+                        다양한 경험을 통해 얻은 인사이트로 더 효율적인 작업을 위해 현재의 문제점을 찾고 해결해 나아가고, 사용자에게는 더 나은 서비스 환경을 제공하는 개발자가 되고 싶습니다.
+                        </p>
+                    </div>
+
+                    <div className="blank_box_30"></div>
+
+                    <div className="txt_frame">
+                        <p className="txt txt_cont weight_b">지금은,</p>
+                        <div className="blank_box_10"></div>
+                        <p className="txt txt_cont">
+                        일이든 공부든 늘 힘들지 않은 것이 없지만 끝내 해냈을 때의 성취감을 좋아합니다. 모르는 것보다 나를 무지한 상태로 방치하는 것이 더 부끄러운 것이라고 생각하기 때문에 자기개발을 중요하게 생각합니다. 할 수 있는 일은 잘하고, 못하는 것은 열심히 하자는 마음 가짐으로 목표한 방향을 향해 꾸준히 나아가고 있습니다.
+                        </p>
+                    </div>
+
+                    <div className="blank_box_30"></div>
+
+                    <div className="txt_frame">
+                        <p className="txt txt_cont weight_b">사람들과 의견을 나누는 것을 좋아해요.</p>
+                        <div className="blank_box_10"></div>
+                        <p className="txt txt_cont">
+                        다른 사람들의 의견을 존중하고 수용하는 것에 늘 상상 이상의 시너지가 있다고 믿습니다. 의견을 공유하며 내가 고려하지 못한 점을 발견하고 반영하는 과정을 통해 더 나은 결과물을 만들어 나갈 수 있기 때문 입니다.
                         </p>
                     </div>
                 </div>

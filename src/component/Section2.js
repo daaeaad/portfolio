@@ -41,88 +41,30 @@ const Section2 = () => {
                 <div className="blank_box_50"></div>
                 <div className="lay_1">
                     <ul className="lay_1 flex flex_row flex_justi_between">
-                        <motion.li className="item lay_3_1" whileHover={{scale:1.1}}>
+                        <motion.li className="item lay_2_1" whileHover={{scale:1.1}}>
                             <div className="txt_frame tit">
-                                <h4 className="txt weight_l c_bb size_20">
-                                    for <b className="weight_b c_red underline">Design</b>
+                                <h4 className="txt weight_b size_20">
+                                    <b className="weight_b c_red underline">새로운 것</b>에 거부감이 없어요.
                                 </h4>
                             </div>
                             <div className="blank_box_10"></div>
                             <div className="txt_frame con">
-                                <p className="txt size_14">
-                                직관적이고 깔끔한 디자인을 좋아합니다. 편하지 않으면 결국 사용자에게 외면 당할 것이라고 생각하기 때문에 사용 편의성이 잘 고려되는 것을 중요하게 생각합니다.
+                                <p className="txt size_16">
+                                새로운 프레임워크나 라이브러리를 사용해야 해서 학습을 병행해야 하는 경우에 대한 거부감이 없습니다. 이미 학습되어 있거나 익숙한 기술을 사용하면 그만큼 작업하는데 필요한 비용과 부담이 상대적으로 적어서 좋지만, 새로운 기술이 필요할 경우, 왜 도입해야 되는지에 대한 이유가 충족이 되면 동기부여가 되어 학습과 동시에 실무에서 경험함을 통해 내 역량이 확장되는 것으로 여기고 즐거움을 느낍니다. 따라서 이런 상황에 대한 거부감이 없고, 이런 점이 개인 역량 성장에 대한 긍정적 영향을 끼치는 것 같습니다.
                                 </p>
                             </div>
                         </motion.li>
                         <li className="blank_box_30"></li>
-                        <motion.li className="item lay_3_1" whileHover={{scale:1.1}}>
+                        <motion.li className="item lay_2_1" whileHover={{scale:1.1}}>
                             <div className="txt_frame tit">
-                                <h4 className="txt weight_l c_bb size_20">
-                                    for <b className="weight_b c_red underline">Development</b>
+                                <h4 className="txt weight_b size_20">
+                                    <b className="weight_b c_red underline">능동적인 태도</b>로 일합니다.
                                 </h4>
                             </div>
                             <div className="blank_box_10"></div>
                             <div className="txt_frame con">
-                                <p className="txt size_14">
-                                웹 퍼블리싱을 이해하고 잘 다룹니다. 개발 단계와 유지보수를 고려한 코드를 작성하는 것과 기획자, 디자이너의 의도를 잘 이해해하는 것을 중요하게 생각합니다.
-                                </p>
-                            </div>
-                        </motion.li>
-                        <li className="blank_box_30"></li>
-                        <motion.li className="item lay_3_1" whileHover={{scale:1.1}}>
-                            <div className="txt_frame tit">
-                                <h4 className="txt weight_l c_bb size_20">
-                                    for <b className="weight_b c_red underline">Team</b>
-                                </h4>
-                            </div>
-                            <div className="blank_box_10"></div>
-                            <div className="txt_frame con">
-                                <p className="txt size_14">
-                                다양한 직군과의 원활한 협업을 이끌어내기 위해 노력합니다. 나와 다른 의견을 존중하고 이해하며 함께 작업했을 때에 더 좋은 결과물을 만들 수 있다고 생각합니다.
-                                </p>
-                            </div>
-                        </motion.li>
-                    </ul>
-                    <div className="blank_box_30"></div>
-                    <ul className="lay_1 flex flex_row flex_justi_between">
-                        <motion.li className="item lay_3_1" whileHover={{scale:1.1}}>
-                            <div className="txt_frame tit">
-                                <h4 className="txt weight_l c_bb size_20">
-                                    for <b className="weight_b c_red underline">Customers</b>
-                                </h4>
-                            </div>
-                            <div className="blank_box_10"></div>
-                            <div className="txt_frame con">
-                                <p className="txt size_14">
-                                초기에 고객의 요구사항을 정확히 파악하는 것을 중요하게 생각합니다. 좋은 결과물을 위해 때로는 고객의 의견을 무조건적으로 수용하는 것 보다 적절한 타협도 필요하다고 생각합니다.
-                                </p>
-                            </div>
-                        </motion.li>
-                        <li className="blank_box_30"></li>
-                        <motion.li className="item lay_3_1" whileHover={{scale:1.1}}>
-                            <div className="txt_frame tit">
-                                <h4 className="txt weight_l c_bb size_20">
-                                    for <b className="weight_b c_red underline">Users</b>
-                                </h4>
-                            </div>
-                            <div className="blank_box_10"></div>
-                            <div className="txt_frame con">
-                                <p className="txt size_14">
-                                사용하는 사람은 어떤 사람일지, 무엇을 가장 원할지 여러 케이스의 사용자를 상상하고 불편하지 않고 흥미로운 인터페이스와 경험을 제공하는 것을 중요하게 생각합니다. 
-                                </p>
-                            </div>
-                        </motion.li>
-                        <li className="blank_box_30"></li>
-                        <motion.li className="item lay_3_1" whileHover={{scale:1.1}}>
-                            <div className="txt_frame tit">
-                                <h4 className="txt weight_l c_bb size_20">
-                                    for <b className="weight_b c_red underline">Me</b>
-                                </h4>
-                            </div>
-                            <div className="blank_box_10"></div>
-                            <div className="txt_frame con">
-                                <p className="txt size_14">
-                                일을 꾸준히 하기 위해서 자기개발도 중요하지만 무엇보다 스스로의 멘탈을 잘 관리해야 한다고 생각합니다. 저는 스스로를 잘 알고 케어하며 번아웃을 대비하고 있습니다.
+                                <p className="txt size_16">
+                                능동적인 태도로 일합니다. 내 일과 내 일이 아닌 것을 구분하기 보다, 결국 다 함께 하나의 프로덕트를 만드는 일을 하고 있고, 수동적으로 일을 진행하면서 개선하지 못하거나 이해하지 못하고 진행한 문제점들은 결국 언제든 다시 돌아오게 되어 있다고 생각하기 때문에 주어진 시안과 기획서를 보면서 수동적인 태도로 일을 진행하기 보다는 능동적 태도로 생각하고 궁금한 것이나 개선점이 발생하면 의견을 나누고 물어보며 작업을 진행 합니다.
                                 </p>
                             </div>
                         </motion.li>

@@ -3,13 +3,13 @@ import styled from "styled-components";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-import thum1 from "../assets/images/img/img-thum-1.png";
-import thum2 from "../assets/images/img/img-thum-2.png";
-import thum3 from "../assets/images/img/img-thum-3.png";
-import thum4 from "../assets/images/img/img-thum-4.png";
-import thum5 from "../assets/images/img/img-thum-5.png";
-import thum6 from "../assets/images/img/img-thum-6.png";
-import thum7 from "../assets/images/img/img-thum-7.png";
+import thum1 from "../assets/images/img/img-thum-1.png"; // 후지제록스
+import thum2 from "../assets/images/img/img-thum-2.png"; // 나비서
+import thum3 from "../assets/images/img/img-thum-3.png"; // 공주대학교
+import thum4 from "../assets/images/img/img-thum-4.png"; // 프로이드
+import thum5 from "../assets/images/img/img-thum-5.png"; // 충남어촌특화지원센터
+import thum6 from "../assets/images/img/img-thum-6.png"; // 스마트통합발송
+import thum7 from "../assets/images/img/img-thum-7.png"; // 이비엠앱
 
 import Board from "./Board";
 import TextAnimation from "./TextAnimation";
@@ -37,6 +37,16 @@ const Section3 = () => {
         });
     }
 
+    const thumDatas = [
+        { id: 1, img: thum3 }, // 공주대
+        { id: 2, img: thum4 }, // 프로이드
+        { id: 3, img: thum6 }, // 금산
+        { id: 4, img: thum5 }, // 충남어촌
+        { id: 5, img: thum1 }, // 후지제록스
+        { id: 6, img: thum2 }, // 나비서
+        { id: 7, img: thum7 }, // 이비엠
+     ];
+
     return(
         <div ref={ref}>
         <motion.section id="sec_3" className="sec pd_sec posi_rltv"
@@ -55,7 +65,7 @@ const Section3 = () => {
                 </div>
 
 
-                <Board id={number} pfNum={`pf${number}`} ani={{opacity:1, x:0, transition:{duration:0.4, delay:0.2}}}/>
+                <Board key={number} id={number} pfNum={`pf${number}`} ani={{opacity:1, x:0, transition:{duration:0.4, delay:0.2}}}/>
 
 
                 <div className="blank_box_30"></div>
@@ -63,115 +73,21 @@ const Section3 = () => {
                 <div className="lay_1 maxwid">
                     <ul className="lay_1 flex flex_row flex_wrap">
                         {/* 반복 */}
-                        <motion.li className="lay_7_1 posi_rltv" 
-                            onHoverStart={() => {
-                                setNumber(1);
-                            }}
-                            onClick={() => {
-                                setNumber(1);
-                            }}
-                        >
-                            <motion.div className={`square ${number===1?'act':''}`}>
-                                <div className="inner">
-                                    {/* 썸네일 이미지 */}
-                                    <div className="img_frame"><img src={thum1} alt="" /></div>
-                                </div>
-                            </motion.div>
-                        </motion.li>
+                        {
+                        thumDatas.map((data) => {
+                            return (
+                                <motion.li className="lay_7_1 posi_rltv" key={data.id} onHoverStart={() => {setNumber(data.id);}} onClick={() => {setNumber(data.id);}}
+                                >
+                                    <motion.div className={`square ${number===data.id?'act':''}`}>
+                                        <div className="inner">
+                                            <div className="img_frame"><img src={data.img} alt="" /></div>
+                                        </div>
+                                    </motion.div>
+                                </motion.li>
+                            );
+                        })
+                        }
                         {/* 반복 끝 */}
-
-                        {/* 반복구간 */}
-                        <motion.li className="lay_7_1 posi_rltv" 
-                            onHoverStart={() => {
-                                setNumber(2);
-                            }}
-                            onClick={() => {
-                                setNumber(2);
-                            }}
-                        >
-                            <motion.div className={`square ${number===2?'act':''}`}>
-                                <div className="inner">
-                                    {/* 썸네일 이미지 */}
-                                    <div className="img_frame"><img src={thum2} alt="" /></div>
-                                </div>
-                            </motion.div>
-                        </motion.li>
-                        <motion.li className="lay_7_1 posi_rltv" 
-                            onHoverStart={() => {
-                                setNumber(3);
-                            }}
-                            onClick={() => {
-                                setNumber(3);
-                            }}
-                        >
-                            <motion.div className={`square ${number===3?'act':''}`}>
-                                <div className="inner">
-                                    {/* 썸네일 이미지 */}
-                                    <div className="img_frame"><img src={thum3} alt="" /></div>
-                                </div>
-                            </motion.div>
-                        </motion.li>
-                        <motion.li className="lay_7_1 posi_rltv" 
-                            onHoverStart={() => {
-                                setNumber(4);
-                            }}
-                            onClick={() => {
-                                setNumber(4);
-                            }}
-                        >
-                            <motion.div className={`square ${number===4?'act':''}`}>
-                                <div className="inner">
-                                    {/* 썸네일 이미지 */}
-                                    <div className="img_frame"><img src={thum4} alt="" /></div>
-                                </div>
-                            </motion.div>
-                        </motion.li>
-                        <motion.li className="lay_7_1 posi_rltv" 
-                            onHoverStart={() => {
-                                setNumber(5);
-                            }}
-                            onClick={() => {
-                                setNumber(5);
-                            }}
-                        >
-                            <motion.div className={`square ${number===5?'act':''}`}>
-                                <div className="inner">
-                                    {/* 썸네일 이미지 */}
-                                    <div className="img_frame"><img src={thum5} alt="" /></div>
-                                </div>
-                            </motion.div>
-                        </motion.li>
-                        <motion.li className="lay_7_1 posi_rltv" 
-                            onHoverStart={() => {
-                                setNumber(6);
-                            }}
-                            onClick={() => {
-                                setNumber(6);
-                            }}
-                        >
-                            <motion.div className={`square ${number===6?'act':''}`}>
-                                <div className="inner">
-                                    {/* 썸네일 이미지 */}
-                                    <div className="img_frame"><img src={thum6} alt="" /></div>
-                                </div>
-                            </motion.div>
-                        </motion.li>
-                        <motion.li className="lay_7_1 posi_rltv" 
-                            onHoverStart={() => {
-                                setNumber(7);
-                            }}
-                            onClick={() => {
-                                setNumber(7);
-                            }}
-                        >
-                            <motion.div className={`square ${number===7?'act':''}`}>
-                                <div className="inner">
-                                    {/* 썸네일 이미지 */}
-                                    <div className="img_frame"><img src={thum7} alt="" /></div>
-                                </div>
-                            </motion.div>
-                        </motion.li>
-                        {/* 반복구간 끝 */}
                     </ul>
                 </div>
             </div>

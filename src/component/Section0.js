@@ -35,18 +35,18 @@ const Section0 = () => {
                 <div className="txt_bg_frame posi_absol z_-1">
                     <div className="txt_bg">
                         <div className="blank_box_30"></div>
-                        <TextAnimation txt='DESIGN,' />
-                        <TextAnimation txt='PUBLISHING,' />
-                        <TextAnimation txt='FRONTEND' />
-                        <TextAnimation txt='DEVELOMENT' />
+                        <TextAnimation txt='WELCOME TO' />
+                        <TextAnimation txt='MY PORTFOLIO!' />
                     </div>
                 </div>
                 <div className="txt_frame">
                     <h2 className="txt txt_visual">
-                        <SubtitAnimation txt='오뚜기' isEn={false} />처럼 열심히<b className="en c_red">,</b><br/>일하고 배우는<br/>김다애 입니다<b className="c_red">.</b>
+                        <SubtitAnimation txt='오뚜기' isEn={false} />처럼 쓰러지지 않고 목표를 향해 꾸준히 나아가는 오뚜기 김다애 입니다<b className="c_red">.</b>
                     </h2>
                     <div className="blank_box_15"></div>
-                    <p className="txt size_24 c_9b weight_m">UI/UX Design <b className="c_red">+</b> Publishing <b className="c_red">+</b> Frontend Development</p>
+                    <p className="txt size_16 c_9b weight_m">안녕하세요, 저의 포트폴리오 사이트에 방문해주셔서 감사합니다 :)
+                    <br/>
+                    살펴보신 후 관심이 생기시면 연락을, 혹은 의견이 있으시면 언제든 피드백 부탁드립니다.</p>
                 </div>
             </div>
         </motion.section>
