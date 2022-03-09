@@ -36,7 +36,7 @@ const Section0 = () => {
                     <div className="txt_bg">
                         <div className="blank_box_30"></div>
                         <TextAnimation txt='WELCOME TO' />
-                        <TextAnimation txt='MY PORTFOLIO!' />
+                        <TextAnimation txt='MY PORTFOLIO' />
                     </div>
                 </div>
                 <div className="txt_frame">
