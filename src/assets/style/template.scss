@@ -64,6 +64,10 @@ $weight_eb: 900;
 	&_visual {font-size: $px_74; font-weight: $weight_b; line-height: 1.4;}
 	&_sectitle {font-size: $px_56; font-weight: $weight_b; line-height: 1.2;}
 	&_cont {font-size: $px_16; font-weight: $weight_r; line-height: 1.6;}
+	&_list {display: flex; flex-direction: row; align-items: center;}
+	&_list:before {
+		content: ''; display: block; width: 4px; height: 4px; border-radius: 50%; background-color: $c_98; margin-right: $px_10;
+	}
 }
 .en, .txt.en {letter-spacing: -0.5px; font-family: 'Noto Sans Display' !important; font-weight: inherit;}
 .weight {
@@ -115,7 +119,22 @@ $weight_eb: 900;
 	&_2_1 {width: 50%;}
 	&_3_1 {width: 33.3333%; min-width: 33.3333%;}
 	&_4_1 {width: 25%;}
+	&_5_1 {width: 20%;}
 	&_7_1 {width: 14.2857%;}
+	&_10_1 {width: 10%;}
+}
+.max {
+	&_1 {max-width: 100%;}
+	&_2_1 {max-width: 50%;}
+	&_3_1 {max-width: 33.3333%;}
+	&_4_1 {max-width: 25%;}
+	&_5_1 {max-width: 20%;}
+	&_7_1 {max-width: 14.2857%;}
+	&_10_1 {max-width: 10%;}
+}
+.min {
+	&_100 {min-width: 100px;}
+	&_70 {min-width: 70px;}
 }
 .flex {display: flex;
 	&_grow_1 {flex-grow: 1;}
